@@ -1,0 +1,47 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    crack (0.4.5)
+      rexml
+    ethon (0.15.0)
+      ffi (>= 1.15.0)
+    faraday (2.2.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.2)
+    ffi (1.15.5)
+    hashdiff (1.0.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    public_suffix (4.0.7)
+    rack (2.2.3)
+    rack-protection (2.2.0)
+      rack
+    rexml (3.2.5)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+    typhoeus (1.4.0)
+      ethon (>= 0.9.0)
+    webmock (3.14.0)
+      addressable (>= 2.8.0)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  faraday
+  sinatra
+  typhoeus
+  webmock
+
+BUNDLED WITH
+   2.2.16
