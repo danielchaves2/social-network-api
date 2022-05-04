@@ -5,5 +5,5 @@ require 'faraday'
 set :port, 3000
 
 get '/' do
-    SocialNetworksApi.new.highlights
+  SocialNetworksApi.new.highlights
 end

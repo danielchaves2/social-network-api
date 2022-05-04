@@ -5,24 +5,23 @@ require_relative 'faraday_connection'
 
 class SocialNetworksApi
 
-    attr_reader :facebook, :twitter, :instagram
+  attr_reader :facebook, :twitter, :instagram
 
-    include FaradayConnection
+  include FaradayConnection
 
-    def initialize
-        @conn = obtain_connection
-        @facebook  = FacebookApi.new(@conn)
-        @twitter   = TwitterApi.new(@conn)
-        @instagram = InstagramApi.new(@conn)
-    end
+  def initialize
+    @conn = obtain_connection
+    @facebook  = FacebookApi.new(@conn)
+    @twitter   = TwitterApi.new(@conn)
+    @instagram = InstagramApi.new(@conn)
+  end
 
-    def highlights
+  def highlights
 
-        return {
-                 facebook: @facebook.statuses,
-                 twitter: @twitter.tweets,
-                 instagram: @instagram.photos 
-               }.to_json
-
-    end
+    return {
+              facebook: @facebook.statuses,
+              twitter: @twitter.tweets,
+              instagram: @instagram.photos 
+            }.to_json
+  end
 end

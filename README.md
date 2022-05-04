@@ -44,3 +44,9 @@ Run the command below to execute the unit test cases
 ```bash
 rspec
 ```
+
+After running the tests, a complete test coverage report can be found in file **coverage/index.html**.
+
+## Next  steps
+
+* Async calls with [Typhoeus](https://github.com/typhoeus/typhoeus) adapter for Faraday
